@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  const [name, setName] = useState();
+  const [name, setName] = useState("");
 
   const handleChange = (event) => {
     setName(event.target.value);
