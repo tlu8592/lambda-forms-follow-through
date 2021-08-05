@@ -4,7 +4,10 @@ export default function App() {
   return (
     <div className="App">
       <form>
-        <input type="text" />
+        <label>
+          Username:
+          <input type="text" />
+        </label>
       </form>
     </div>
   );
