@@ -8,14 +8,20 @@ export default function App() {
     setName(event.target.value);
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(name);
+  };
+
   return (
     <div className="App">
       {console.log(name)}
-      <form>
+      <form onSubmit={(event) => handleSubmit(event)}>
         <label>
           Username:
           <input type="text" onChange={(event) => handleChange(event)} />
         </label>
+        <button>Submit!</button>
       </form>
     </div>
   );
