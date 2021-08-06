@@ -10,11 +10,11 @@ export default function App() {
   });
 
   const handleChange = (event) => {
-    setUser({ name: event.target.value });
+    setUser({ ...user, name: event.target.value });
   };
 
   const handlePasswordChange = (event) => {
-    setUser({ password: event.target.value });
+    setUser({ ...user, password: event.target.value });
   };
 
   const handleSubmit = (event) => {
